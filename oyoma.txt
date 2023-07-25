@@ -1,0 +1,31 @@
+CREATE DATABASE estate;
+CREATE TABLE property(
+    property_name varchar(50),
+    property_price float
+    
+    )
+    CREATE TABLE customer(
+    customer_id INT PRIMARY KEY,
+    customer_fullname varchar(50),
+    customer_email varchar(50)UNIQUE,
+    customer_address varchar(50)
+    
+    
+    )
+first method
+INSERT INTO customer(
+    VALUES('124','mayowa fatimah','mayowa@gmail.com','no 11 ojota')
+    
+    )
+
+
+second method
+INSERT INTO customer
+    (customer_id,customer_fullname,customer_email,customer_address)
+       VALUES('125','victor','victor@gmail.com','lagos island')
+
+third method
+INSERT INTO customer SET customer_id='126', customer_fullname='ugochukwu', customer_email='ugo@gmail.com',customer_address='yaba'
+
+
+DELETE FROM customer WHERE customer_id='126',
